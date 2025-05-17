@@ -1,20 +1,13 @@
 @* bs5-navbar-background *@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Cybersoft</a>
-    <button
-        class="navbar-toggler d-lg-none"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-    ></button>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <NavLink class="nav-link active" activeClass="bg-warning text-white" href="/" aria-current="page" Match="NavLinkMatch.All"
-                    >Home <span class="visually-hidden">(current)</span></NavLink>
+                <NavLink class="nav-link active" activeClass="bg-warning text-white" href="/" aria-current="page"
+                    Match="NavLinkMatch.All">Home <span class="visually-hidden">(current)</span></NavLink>
             </li>
             <li class="nav-item">
                 <NavLink class="nav-link" activeClass="bg-warning text-white" href="/login">Login</NavLink>
@@ -25,32 +18,31 @@
             <li class="nav-item">
                 <NavLink activeClass="bg-warning text-white" class="nav-link" href="/contact">Contact</NavLink>
             </li>
-            
+
             <li class="nav-item dropdown">
-                <NavLink
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="dropdownId"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Databinding</NavLink>
+                <NavLink class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Databinding</NavLink>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                     <NavLink class="dropdown-item" href="/data-binding">Data binding</NavLink>
                     <NavLink class="dropdown-item" href="/event-binding">Event binding</NavLink>
+                    <NavLink class="dropdown-item" href="/twowaybinding">Twoway binding</NavLink>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <NavLink class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">component parameter</NavLink>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <NavLink class="dropdown-item" href="/demo-param-children">Demo param children</NavLink>
+                    <NavLink class="dropdown-item" href="/componentparameter">Demo parameter</NavLink>
+
                 </div>
             </li>
         </ul>
         <form class="d-flex my-2 my-lg-0">
-            <input
-                class="form-control me-sm-2"
-                type="text"
-                placeholder="Search"
-            />
+            <input class="form-control me-sm-2" type="text" placeholder="Search" />
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                 Search
             </button>
         </form>
     </div>
 </nav>
-

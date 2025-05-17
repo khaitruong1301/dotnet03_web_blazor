@@ -1,0 +1,19 @@
+
+<div class="card">
+    <img src="@prodItem.image" alt="..." />
+    <div class="card-body">
+        <h1 class="card-title">@prodItem.name</h1>
+        <p class="card-text">@prodItem.price</p>
+        <button class="btn btn-dark">
+            <i class="fa fa-cart-plus"></i> Add to carts
+        </button>
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public ProductCardVM prodItem{get;set;} = new ProductCardVM();
+    
+
+}

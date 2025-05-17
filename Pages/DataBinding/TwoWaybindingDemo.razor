@@ -1,0 +1,73 @@
+@page "/twowaybinding"
+@* @{
+    int number = 10;
+
+    for(int i=0;i <number ;i++) {
+        <p>@i</p>
+    }
+} *@
+
+<EditForm Model="@userRegister" class="w-50 mx-auto" OnValidSubmit="HandleSubmit">
+    @*Hiển thị tất cả các lỗi trên model*@
+    <DataAnnotationsValidator />
+    <ValidationSummary class="alert alert-danger" />
+
+
+
+    <h3>Register</h3>
+    <div class="form-group">
+        <label>Username</label>
+        <input class="form-control" @bind="@userRegister.UserName" />
+        <ValidationMessage For="@(() => userRegister.UserName)" class="text text-danger"></ValidationMessage>
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input class="form-control" type="password" @bind="@userRegister.Password" />
+        <ValidationMessage For="@(() => userRegister.Password)" class="text text-danger"></ValidationMessage>
+    </div>
+    <div class="form-group">
+        <label>FullName</label>
+        <input class="form-control" @bind="@userRegister.FullName" />
+        <ValidationMessage For="@(() => userRegister.FullName)" class="text text-danger"></ValidationMessage>
+    </div>
+
+    @*
+        closure function
+    *@
+    <div class="form-group my-2">
+        <label>Gender</label>
+        <input id="Male" class="form-check-input" value="true" name="Gender" type="radio"
+            @onchange="() => changeGender(true)" checked />
+        <label for="Male" class="form-check-label">Male</label>
+        <input id="FeMale" class="form-check-input" value="false" name="Gender" type="radio"
+            @onchange="() => changeGender(false)" />
+        <label for="FeMale" class="form-check-label">FeMale</label>
+
+    </div>
+    <div class="form-group">
+        <label>Country</label>
+        <select class="form-control" @bind="@userRegister.Country">
+            <option>--- Select country ----</option>
+            @foreach (var item in Countries.lstCountry)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+    </div>
+    <div class="form-group mt-2">
+        <button type="submit" class="btn btn-success">Register</button>
+    </div>
+</EditForm>
+@code {
+    public UserRegister userRegister = new UserRegister();
+    public void HandleSubmit()
+    {
+        string StringValue = JsonSerializer.Serialize(userRegister);
+        Console.WriteLine(StringValue);
+    }
+
+    public void changeGender(bool value)
+    {
+        userRegister.Gender = value;
+    }
+}

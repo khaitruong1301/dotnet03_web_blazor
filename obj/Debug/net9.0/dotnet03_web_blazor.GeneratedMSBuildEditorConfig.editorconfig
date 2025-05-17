@@ -28,8 +28,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnQvSGVhZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/ComponentParameter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0NvbXBvbmVudFBhcmFtZXRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/DemoCom.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0RlbW9Db20ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/DemoParamChildren.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0RlbW9QYXJhbUNoaWxkcmVuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/ProductCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL1Byb2R1Y3RDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/Contact.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/DataBinding/CustomerContactForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGF0YUJpbmRpbmcvQ3VzdG9tZXJDb250YWN0Rm9ybS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/DataBinding/DataBinding.razor]
@@ -38,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/DataBinding/EventBinding.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGF0YUJpbmRpbmcvRXZlbnRCaW5kaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/DataBinding/TwoWaybindingDemo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGF0YUJpbmRpbmcvVHdvV2F5YmluZGluZ0RlbW8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/Index.razor]
