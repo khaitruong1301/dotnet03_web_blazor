@@ -1,0 +1,21 @@
+@page "/ex-car-store"
+
+<div class="container">
+    <ModalCar modalData="@detailModel" />
+    <ProductListCar ChangeCarDetail="ChangeCarDetail" />
+    @* <button></button> *@
+</div>
+
+@code {
+    public ProductCardVM detailModel {get;set;} = DbCarProducts.lstProduct[1];
+
+    public void ChangeCarDetail (ProductCardVM carDetail) {
+        detailModel = carDetail;
+    }
+    
+}
+
+
+
+
+

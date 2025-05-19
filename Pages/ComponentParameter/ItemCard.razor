@@ -1,0 +1,39 @@
+
+<div class="card">
+    <img src="@dataItem.image" alt="..." />
+    <div class="card-body">
+        <h1 class="card-title">@dataItem.name</h1>
+        <p class="card-text">@dataItem.price</p>
+        <button class="btn btn-dark" @onclick="()=>viewDetail(dataItem)">
+            <i class="fa fa-cart-plus"></i> Detail
+        </button>
+    </div>
+    
+</div>
+
+<div>@prod.name</div>
+@code {
+
+    [Parameter]
+    public ProductCardVM dataItem{get;set;} = new ProductCardVM();
+
+    public ProductCardVM prod = new ProductCardVM();
+
+    [Parameter]
+    public EventCallback<ProductCardVM> callbackDetail{get;set;} = new EventCallback<ProductCardVM>();
+    
+    public void viewDetail(ProductCardVM item) {
+        callbackDetail.InvokeAsync(item);
+    }
+
+    public void ChangeProduct(ProductCardVM prd){
+        prod = prd;
+        //Sau khi thay đổi thì muốn cập nhật lại giao diện phải gọi stateHasChange
+        StateHasChanged();
+        
+        Console.WriteLine(JsonSerializer.Serialize(dataItem));
+    }
+
+
+
+}

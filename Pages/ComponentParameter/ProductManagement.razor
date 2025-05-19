@@ -1,0 +1,36 @@
+@page "/product-management";
+
+<EditForm Model="@prdInsert" OnValidSubmit="InsertProduct" class="w-50 mx-auto">
+    <h3>Insert product</h3>
+    <div class="form-group">
+        <label>id</label>
+        <input class="form-control" name="id" @bind="prdInsert.id" />
+    </div>
+    <div class="form-group">
+        <label>name</label>
+        <input class="form-control" name="name" @bind="prdInsert.name" />
+    </div>
+    <div class="form-group">
+        <label>price</label>
+        <input class="form-control" name="price" @bind="prdInsert.price" />
+    </div>
+    <div class="form-group mt-2">
+        <button class="btn btn-success" type="submit">Create</button>
+    </div>
+</EditForm>
+
+<DemoCallBackParam @ref="demoCallBackComponent" />
+
+
+@code {
+    ProductCardVM prdInsert = new ProductCardVM();
+    public DemoCallBackParam  demoCallBackComponent;
+    public void InsertProduct(){
+        @* Console.WriteLine($"{JsonSerializer.Serialize(prdInsert)}"); *@
+
+        prdInsert.image = $"https://picsum.photos/id/{prdInsert.id}/200/200";
+        //từ demoCallBackComponent gọi đến các thuộc tính và phương thức của thẻ democallbackparam
+        demoCallBackComponent.lstProduct.Add(prdInsert);
+        demoCallBackComponent.StateHasChangedPublic();
+    }
+}

@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0NvbXBvbmVudFBhcmFtZXRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/DemoCallBackParam.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0RlbW9DYWxsQmFja1BhcmFtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/DemoCom.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0RlbW9Db20ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,8 +44,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0RlbW9QYXJhbUNoaWxkcmVuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/EXCarStore/EXCarStore.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0VYQ2FyU3RvcmUvRVhDYXJTdG9yZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/EXCarStore/ModalCar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0VYQ2FyU3RvcmUvTW9kYWxDYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/EXCarStore/ProductCar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0VYQ2FyU3RvcmUvUHJvZHVjdENhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/EXCarStore/ProductListCar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0VYQ2FyU3RvcmUvUHJvZHVjdExpc3RDYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/ItemCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0l0ZW1DYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/ProductCard.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL1Byb2R1Y3RDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/ProductManagement.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL1Byb2R1Y3RNYW5hZ2VtZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/Contact.razor]
