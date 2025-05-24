@@ -1,0 +1,18 @@
+<h3>Danhs sách sản phẩm</h3>
+<div class="row">
+    @foreach (SanPhamVM item in lstSanPham)
+    {
+        <div class="col-md-4">
+            <SanPham dataSP="@item" themGioHang="themGioHang"/>
+         
+        </div>
+    }
+
+</div>
+
+
+@code {
+    public List<SanPhamVM> lstSanPham = DbSanPham.lst;
+    [Parameter]
+    public EventCallback<SanPhamGioHang> themGioHang{get;set;}
+}

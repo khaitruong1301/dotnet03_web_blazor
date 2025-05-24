@@ -1,0 +1,71 @@
+<h3 class="text-end">Giỏ hàng</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã sản phẩm</th>
+            <th>Hình ảnh</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá bán</th>
+            <th>Số lượng</th>
+            <th>Tổng tiền</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (SanPhamGioHang spGH in dataGioHang)
+        {
+            <tr>
+                <td>@spGH.MaSanPham</td>
+                <td>
+                    <img src="@spGH.HinhAnh" alt="..." width="50" />
+                </td>
+                <td>@spGH.TenSanPham</td>
+                <td>@spGH.GiaBan</td>
+                <td>
+                    <button class="btn btn-success mx-2" @onclick="()=>tangGiamSL(spGH.MaSanPham,1)">+</button>
+                    <input type="number" min="1" max="100" @bind="@spGH.SoLuong" class="form-control d-inline-block mx-2" style="width:50px;" />
+                    <button class="btn btn-success mx-2"  @onclick="()=>tangGiamSL(spGH.MaSanPham,-1)">-</button>
+                </td>
+                <td>@spGH.tinhTongTien()</td>
+                <td>
+                    <button class="btn btn-danger" @onclick="()=>xoaSPGH(spGH.MaSanPham)">
+                        <i class="fa fa-trash fs-3"></i>
+                    </button>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td align="right" colspan="6">Tổng tiền</td>
+            <td>@dataGioHang.Sum(n=> n.SoLuong * n.GiaBan).ToString("N0")</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+@code {
+    //param
+    [Parameter]
+    public List<SanPhamGioHang> dataGioHang { get; set; }
+    [Parameter]
+    public EventCallback<ObjectValue> tangGiamSoLuong{get;set;}
+    [Parameter]
+    public EventCallback<int> xoaSanPham{get;set;}
+
+    public void tangGiamSL(int maSP,int soLuong){ //3, 1 click + trên mã 3
+        // {key:"3",value:1} 
+        ObjectValue ob = new ObjectValue();
+        ob.key = maSP.ToString();
+        ob.value = soLuong.ToString();
+        //Gọi hàm callback từ component cha để đưa dữ liệu ra component chứa state
+        tangGiamSoLuong.InvokeAsync(ob);
+
+    }
+
+    public void xoaSPGH(int maSPClickXoa) {
+        xoaSanPham.InvokeAsync(maSPClickXoa);
+    }
+
+}

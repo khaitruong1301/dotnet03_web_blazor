@@ -1,0 +1,47 @@
+@page "/bt-giohang"
+
+<div class="container">
+    <GioHang dataGioHang="@lstSPGH" tangGiamSoLuong="tangGiamSoLuong" xoaSanPham="xoaSanPham" />
+    <DanhSachSanPham themGioHang="themGioHang" />
+   
+</div>
+@code {
+    public static List<SanPhamGioHang> lstSPGH = new List<SanPhamGioHang>(){
+        @* new SanPhamGioHang(){
+            MaSanPham=1,TenSanPham="Sản phẩm 1",GiaBan=1000,SoLuong=2,HinhAnh="https://dummyimage.com/200x200?text=spgh-demo"
+        }, 
+        new SanPhamGioHang(){
+            MaSanPham=2,TenSanPham="Sản phẩm 2",GiaBan=2000,SoLuong=2,HinhAnh="https://dummyimage.com/200x200?text=spgh2-demo"
+        }    *@
+    };
+    public void themGioHang(SanPhamGioHang spClick)
+    {
+        //Xử lý thêm giỏ hàng tại đây
+        //Kiểm tra spClick có trong giỏ hàng hay chưa ?
+        SanPhamGioHang? checkSP = lstSPGH.Find(sp => sp.MaSanPham == spClick.MaSanPham);
+        if(checkSP != null){
+            checkSP.SoLuong += 1; //Nếu tồn tại thì tăng số lượng chứ không add vào giỏ hàng
+        }else {
+            lstSPGH.Add(spClick); //Nếu không tồn tại trong giỏ hàng thì thêm vào
+        }
+    }
+    
+    public void tangGiamSoLuong(ObjectValue maSPSL){
+
+        SanPhamGioHang? checkSP = lstSPGH.Find(sp => sp.MaSanPham == int.Parse(maSPSL.key));
+
+        if(checkSP !=null) {
+            if(checkSP.SoLuong == 1 && maSPSL.value == "-1"){
+                lstSPGH.Remove(checkSP);
+                return;
+            }
+            checkSP.SoLuong +=  int.Parse(maSPSL.value);
+        }
+   
+    }
+
+    public void xoaSanPham(int maSP){
+        lstSPGH = lstSPGH.Where(sp =>sp.MaSanPham != maSP).ToList();
+    }
+    
+}

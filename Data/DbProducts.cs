@@ -2,6 +2,7 @@ namespace dotnet03_web_blazor.Data;
 
 public static class DbProducts
 {
+  
   public static List<ProductCardVM> lstProduct = new List<ProductCardVM>(){
       new ProductCardVM() {
         id=1,name="Iphone",price=1000,image = "https://picsum.photos/id/1/200/200"

@@ -28,6 +28,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25lbnQvSGVhZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/BTGioHang/BTGioHang.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0JUR2lvSGFuZy9CVEdpb0hhbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/BTGioHang/DanhSachSanPham.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0JUR2lvSGFuZy9EYW5oU2FjaFNhblBoYW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/BTGioHang/GioHang.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0JUR2lvSGFuZy9HaW9IYW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/BTGioHang/SanPham.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0JUR2lvSGFuZy9TYW5QaGFtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ComponentParameter/ComponentParameter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29tcG9uZW50UGFyYW1ldGVyL0NvbXBvbmVudFBhcmFtZXRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
