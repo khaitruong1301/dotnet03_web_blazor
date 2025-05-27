@@ -1,0 +1,28 @@
+<div>
+    <ul class="list-group mb-3" id="notificationList">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Welcome to the site!
+            <button class="btn btn-danger btn-sm" onclick="removeNotification(this)">Dismiss</button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            New updates available!
+            <button class="btn btn-danger btn-sm" onclick="removeNotification(this)">Dismiss</button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            cybersoft notify
+            <button class="btn btn-danger btn-sm" onclick="removeNotification(this)">Dismiss</button>
+        </li>
+    </ul>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="notificationInput" placeholder="cybersoft notify (1)">
+        <button class="btn btn-primary" onclick="addNotification()">Add Notification</button>
+    </div>
+</div>
+
+@code {
+
+    
+    protected override void OnAfterRender(bool firstRender){
+        Console.WriteLine($"render ChildComponent {firstRender}");
+    }
+}

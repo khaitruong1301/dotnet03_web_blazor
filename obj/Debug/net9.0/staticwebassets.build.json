@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WSJq8MLLKRXD+IHyuj+pVHkUPRSDNakG66sPqC9BpXU=",
+  "Hash": "4M/rnsRypzA0bnl6+sWRPcR/46hrYBLIWNT3rnZ/kis=",
   "Source": "dotnet03_web_blazor",
   "BasePath": "_content/dotnet03_web_blazor",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    },
+    {
+      "Identity": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/8esalhl4rb-winjbipvax.gz",
+      "SourceId": "dotnet03_web_blazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/dotnet03_web_blazor",
+      "RelativePath": "Data/Data#[.{fingerprint=winjbipvax}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/Data/Data.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "og3do48fkq",
+      "Integrity": "yDoVzHQT0IwbCwE7uA9/s89OADpNGiTZyDhLw8hNTn4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/Data/Data.json"
     },
     {
       "Identity": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/f3uy9kacyt-bpk8xqwxhs.gz",
@@ -414,6 +435,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/Data/Data.json",
+      "SourceId": "dotnet03_web_blazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/",
+      "BasePath": "_content/dotnet03_web_blazor",
+      "RelativePath": "Data/Data#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "winjbipvax",
+      "Integrity": "2MDn+eaQB8NQQQ80GPWrXkmEMaCWRco7H5sWOawmvTE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Data/Data.json"
     },
     {
       "Identity": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/favicon.png",
@@ -3015,6 +3057,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-Fp6PmuRsVGr4Y+Ew8SKU7Zge5VmbSwKs1TEa50tbfs0="
+        }
+      ]
+    },
+    {
+      "Route": "Data/Data.json",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/8esalhl4rb-winjbipvax.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.020000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDoVzHQT0IwbCwE7uA9/s89OADpNGiTZyDhLw8hNTn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 13:01:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2MDn+eaQB8NQQQ80GPWrXkmEMaCWRco7H5sWOawmvTE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2MDn+eaQB8NQQQ80GPWrXkmEMaCWRco7H5sWOawmvTE="
+        }
+      ]
+    },
+    {
+      "Route": "Data/Data.json",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/Data/Data.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2MDn+eaQB8NQQQ80GPWrXkmEMaCWRco7H5sWOawmvTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 13:01:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2MDn+eaQB8NQQQ80GPWrXkmEMaCWRco7H5sWOawmvTE="
+        }
+      ]
+    },
+    {
+      "Route": "Data/Data.json.gz",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/8esalhl4rb-winjbipvax.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDoVzHQT0IwbCwE7uA9/s89OADpNGiTZyDhLw8hNTn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 13:01:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yDoVzHQT0IwbCwE7uA9/s89OADpNGiTZyDhLw8hNTn4="
+        }
+      ]
+    },
+    {
+      "Route": "Data/Data.winjbipvax.json",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/8esalhl4rb-winjbipvax.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.020000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDoVzHQT0IwbCwE7uA9/s89OADpNGiTZyDhLw8hNTn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 13:01:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2MDn+eaQB8NQQQ80GPWrXkmEMaCWRco7H5sWOawmvTE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "winjbipvax"
+        },
+        {
+          "Name": "label",
+          "Value": "Data/Data.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2MDn+eaQB8NQQQ80GPWrXkmEMaCWRco7H5sWOawmvTE="
+        }
+      ]
+    },
+    {
+      "Route": "Data/Data.winjbipvax.json",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/Data/Data.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2MDn+eaQB8NQQQ80GPWrXkmEMaCWRco7H5sWOawmvTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 13:01:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "winjbipvax"
+        },
+        {
+          "Name": "label",
+          "Value": "Data/Data.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2MDn+eaQB8NQQQ80GPWrXkmEMaCWRco7H5sWOawmvTE="
+        }
+      ]
+    },
+    {
+      "Route": "Data/Data.winjbipvax.json.gz",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/8esalhl4rb-winjbipvax.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "49"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDoVzHQT0IwbCwE7uA9/s89OADpNGiTZyDhLw8hNTn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 13:01:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "winjbipvax"
+        },
+        {
+          "Name": "label",
+          "Value": "Data/Data.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yDoVzHQT0IwbCwE7uA9/s89OADpNGiTZyDhLw8hNTn4="
         }
       ]
     },

@@ -1,0 +1,74 @@
+@page "/demo-oninit"
+@inject HttpClient _http
+@inject NavigationManager _nav
+<div class="container">
+    <button class="btn btn-dark" @onclick="getDataApi">Tải data</button>
+    <div class="form-group my-2">
+        <label>Category</label>
+        <select class="form-control d-inline-block w-25">
+            @foreach (string item in lstCategory)
+            {
+                <option>@item</option>
+            }
+        </select>
+    </div>
+
+    <div class="row">
+        @foreach (ProductModelApi item in lst)
+        {
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <img src="@item.Img" alt="..." height="300" style="object-fit: cover;" />
+                    <div class="card-body">
+                        <h3 class="card-title">@item.Name</h3>
+                        <p class="card-text">@item.Price</p>
+                        <button class="btn btn-success">Buy</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    public List<ProductModelApi>? lst = new List<ProductModelApi>();
+    public List<string> lstCategory = new List<string>();
+    public async Task getDataApi()
+    {
+        try
+        {
+            List<ProductModelApi>? data = await
+            _http.GetFromJsonAsync<List<ProductModelApi>>("https://svcy.myclass.vn/api/ProductApi/getall");
+            lst = data;
+            Console.WriteLine($"{JsonSerializer.Serialize(data)}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"{ex.Message}");
+        }
+    }
+    async Task getDataFileJson()
+    {
+        try
+        {
+            List<string> ? data = await
+            _http.GetFromJsonAsync<List<string>>($"{_nav.BaseUri}/Data/Data.json");
+            lstCategory = data;
+            Console.WriteLine($"{JsonSerializer.Serialize(data)}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"{ex.Message}");
+        }
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        //Hàm chạy đầu tiên sau khi component load html (thường dùng để lấy data hoặc gọi api)
+        await getDataApi();
+        await getDataFileJson();
+    }
+    protected override void OnInitialized()
+    {
+
+    }
+}

@@ -8,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
+//DI service http
+builder.Services.AddHttpClient();
+
+
 
 var app = builder.Build();
 

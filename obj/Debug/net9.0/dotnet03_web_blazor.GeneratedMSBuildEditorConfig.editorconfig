@@ -112,6 +112,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/LifeCycle/DemoDispose/DemoDispose.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZUN5Y2xlL0RlbW9EaXNwb3NlL0RlbW9EaXNwb3NlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/LifeCycle/DemoOninit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZUN5Y2xlL0RlbW9PbmluaXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/LifeCycle/DemoRendering/ChildComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZUN5Y2xlL0RlbW9SZW5kZXJpbmcvQ2hpbGRDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/LifeCycle/DemoRendering/ParentComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZUN5Y2xlL0RlbW9SZW5kZXJpbmcvUGFyZW50Q29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/LifeCycle/DemoRendering/StaticCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZUN5Y2xlL0RlbW9SZW5kZXJpbmcvU3RhdGljQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/LifeCycle/DemoSetParametter/DemoSetParametter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZUN5Y2xlL0RlbW9TZXRQYXJhbWV0dGVyL0RlbW9TZXRQYXJhbWV0dGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/LifeCycle/DemoSetParametter/DetailProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlmZUN5Y2xlL0RlbW9TZXRQYXJhbWV0dGVyL0RldGFpbFByb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

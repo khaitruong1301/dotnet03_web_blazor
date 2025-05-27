@@ -1,0 +1,29 @@
+@page "/demo-dispose"
+@implements IDisposable
+
+<div class="container">
+    <h3>Demo dispose</h3>
+
+
+
+</div>
+
+@code {
+
+    Timer timer;
+
+    protected override void OnInitialized(){
+        timer = new Timer((state)=>{
+            Console.WriteLine("render service");
+        },null,0,1000);
+    }
+
+    public void Dispose(){
+        //Hàm này sẽ chạy khi component mất khỏi giao diện
+        timer?.Dispose();
+        //background service
+    }
+
+}
+
+

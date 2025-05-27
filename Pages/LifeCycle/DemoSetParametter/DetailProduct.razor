@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <h3>@prodDetail?.name</h3>
+            <img class="w-100" src="@prodDetail?.image" alt="..." />
+        </div>
+        <div class="col-8">
+            <h3>Product detail</h3>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>id</th>
+                        <th>@prodDetail?.id</th>
+                    </tr>
+                    <tr>
+                        <th>name</th>
+                        <th>@prodDetail?.name</th>
+                    </tr>
+                    <tr>
+                        <th>price</th>
+                        <th>@prodDetail?.price</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public ProductCardVM? prodDetail { get; set; }
+
+    public override async Task SetParametersAsync(ParameterView lstParam)
+    {
+        //Can thiệp vào quá trình trước khi render ra giao diện mỗi khi component thay đổi giá trị param
+        ProductCardVM? param = lstParam.GetValueOrDefault<ProductCardVM>("prodDetail");
+        Console.WriteLine(JsonSerializer.Serialize(param));
+        if(param.id == 1){
+             param.price = 10000;
+        }   
+        await base.SetParametersAsync(lstParam);
+
+
+    }
+
+}

@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/Data/Data.json",
+      "PackagePath": "staticwebassets/Data/Data.json"
+    },
+    {
       "Id": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
