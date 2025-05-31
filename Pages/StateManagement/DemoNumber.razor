@@ -1,0 +1,38 @@
+@page "/state-management-demonumber"
+@implements IDisposable
+@inject StateNumberService numberService
+
+
+<div class="container">
+    <h1 class="badge bg-dark d-inline-block fs-1">number: @numberService.number</h1> <br />
+    <button class="btn btn-dark" @onclick="()=>changeNumber(1)">+</button>
+    <button class="btn btn-dark"  @onclick="()=>changeNumber(-1)">-</button>
+</div>
+
+@code {
+
+    protected override void OnInitialized(){
+       
+        //map state has change service vào state has change component
+        numberService.OnChange += StateHasChanged;
+    }
+    void changeNumber(int number){
+        numberService.changeNumber(number);
+    }
+
+
+    public void Dispose(){
+        numberService.OnChange -= StateHasChanged;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

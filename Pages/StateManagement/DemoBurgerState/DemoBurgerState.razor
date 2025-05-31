@@ -1,0 +1,80 @@
+@*blazor-component  *@
+@page "/burger-state-demo"
+@inject BurgerStateService burgerService
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h3>Burger</h3>
+            <div class="breadTop"></div>
+            @foreach (Topping topping in burgerService.burger.toppings)
+            {
+                for (int i = 0; i < topping.quantity; i++)
+                {
+                    <div class="@topping.name"></div>
+                }
+            }
+            }
+
+            <div class="breadBottom"></div>
+        </div>
+        <div class="col-6">
+            <h3>Add topping</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>topping</th>
+                        <th>price</th>
+                        <th>quantity</th>
+                        <th>total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Topping item in burgerService.burger.toppings)
+                    {
+                        <tr>
+                            <th>@item.name</th>
+                            <th>@item.price</th>
+                            <th>@item.quantity</th>
+                            @{
+                                int total = item.price * item.quantity;
+                            }
+                            <th>@total.ToString("N0")</th>
+                            <th>
+                                <button class="btn btn-outline-success mx-2" @onclick="()=> changeTopping(item.name,1)">+</button>
+                                <button class="btn btn-outline-danger mx-2" @onclick="()=> changeTopping(item.name,-1)">-</button>
+                            </th>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total</th>
+                        <th>
+                            @burgerService.burger.toppings.Sum(n=>n.price * n.quantity).ToString("N0")
+                        </th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        // Nếu có dùng state service:
+        burgerService.OnChange += StateHasChanged;
+    }
+    public void changeTopping(string name, int quantity) {
+        burgerService.addTopping(name,quantity);
+    }
+    public void Dispose()
+    {
+        // Cleanup nếu cần
+        burgerService.OnChange -= StateHasChanged;
+    }
+}

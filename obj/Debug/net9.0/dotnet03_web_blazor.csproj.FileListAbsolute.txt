@@ -21,7 +21,6 @@
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/n9ahkubxoo-wk8x8xm0ah.gz
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/1i1znkg446-sjnzgf7e1h.gz
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/te6e4uetpq-5bzwdl5l6x.gz
-/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/ui0qt9tcqv-zh9s866nx2.gz
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/staticwebassets.build.json
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/staticwebassets.development.json
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -38,3 +37,11 @@
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/ref/dotnet03_web_blazor.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.sourcelink.json
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/8esalhl4rb-winjbipvax.gz
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/ui0qt9tcqv-qhsu44f2zt.gz
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.csproj.AssemblyReference.cache
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.MvcApplicationPartsAssemblyInfo.cs
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03.D8655739.Up2Date
