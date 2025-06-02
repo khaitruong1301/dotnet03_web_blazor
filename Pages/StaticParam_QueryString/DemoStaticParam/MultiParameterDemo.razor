@@ -1,0 +1,60 @@
+@page "/multi-param"
+
+<style>
+    .category-menu {
+        max-width: 900px;
+        margin: 30px auto;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+    }
+
+    .category-title {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .category-column ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .category-column ul li {
+        padding: 4px 0;
+    }
+</style>
+
+<div class="category-menu">
+    <div class="row">
+        <!-- Danh mục cha 1 -->
+        <div class="col-md-4 category-column">
+            <div class="category-title">Thương hiệu</div>
+            <ul>
+                <li><NavLink href="/detail-multiparam/brand/apple">Apple</NavLink></li>
+                <li><NavLink href="/detail-multiparam/brand/ASUS">ASUS</NavLink></li>
+                <li><NavLink href="/detail-multiparam/brand/Lenovo">Lenovo</NavLink></li>
+            </ul>
+        </div>
+
+        <!-- Danh mục cha 2 -->
+        <div class="col-md-4 category-column">
+            <div class="category-title">Phân khúc giá</div>
+            <ul>
+                <li><a href="#">Dưới 10 triệu</a></li>
+                <li><a href="#">Từ 10 - 15 triệu</a></li>
+                <li><a href="#">Từ 15 - 20 triệu</a></li>
+            </ul>
+        </div>
+
+        <!-- Danh mục cha 3 -->
+        <div class="col-md-4 category-column">
+            <div class="category-title">Dòng chip</div>
+            <ul>
+                <li><a href="#">Intel Core i5</a></li>
+                <li><a href="#">Intel Core i7</a></li>
+                <li><a href="#">Apple M1</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

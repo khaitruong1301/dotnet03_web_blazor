@@ -1,0 +1,20 @@
+@page "/detail-multiparam/{category}/{id}"
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">@category</a></li>
+    <li class="breadcrumb-item active" aria-current="page">@id</li>
+  </ol>
+</nav>
+
+<div class="container">
+  
+</div>
+@code {
+    [Parameter]
+    public string category{get;set;}
+    [Parameter]
+    public string id{get;set;}
+    
+}

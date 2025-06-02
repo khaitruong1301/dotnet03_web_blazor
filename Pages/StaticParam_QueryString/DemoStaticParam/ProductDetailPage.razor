@@ -1,0 +1,141 @@
+@page "/product-detail/{id:int}"
+@inject HttpClient Http
+@implements IDisposable
+@inject ProductStateService prodService;
+
+@{
+  ProductDetailViewModel productDetail = prodService.prodDetail;
+
+}
+
+<div class="container my-4">
+  <div class="row">
+    <!-- Hình ảnh sản phẩm -->
+    <div class="col-md-5">
+      <div class="border rounded bg-white p-3">
+        <img style="@($"transform: {deg};")" src="@productDetail.Image" class="img-fluid mb-3 rounded" alt="Sản phẩm">
+        <div class="d-flex gap-2">
+          @if (productDetail?.DetaildetailedImages != null)
+          {
+            @foreach (var item in productDetail.DetaildetailedImages)
+            {
+              <div class="border border-1 p-2">
+                <img src="@productDetail.Image" width="60" class="me-2  rounded" alt="thumb"
+                  style="@($"transform: {item}; cursor:pointer;")" @onclick="() => changeImage(item)">
+              </div>
+            }
+
+          }
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Thông tin sản phẩm -->
+    <div class="col-md-7">
+      <div class="border rounded bg-white p-4">
+        <h5 class="text-danger mb-2">@productDetail.Name</h5>
+        <div class="d-flex align-items-center mb-2">
+          <span class="badge bg-danger me-2">Top Deal</span>
+          <span class="badge bg-warning text-dark me-2">30 Ngày Đổi Trả</span>
+          <span class="badge bg-primary">Chính Hãng</span>
+        </div>
+        <p><strong>Đánh giá:</strong> ⭐ 4.8 (478 đánh giá) | Đã bán 3k</p>
+        <h4 class="text-danger">@productDetail.Price $ </h4>
+
+        <p class="mb-1">Giảm thêm 7.170₫ với mã của Tiki</p>
+
+        <div class="mb-3">
+          <label for="color" class="form-label">Màu:</label>
+          <select class="form-select w-auto" id="color">
+            <option selected>Đen</option>
+          </select>
+        </div>
+
+        <p class="mb-1"><strong>Vận chuyển:</strong> Giao đến Quận 7, Hồ Chí Minh</p>
+        <p class="text-muted small">Giao Thứ Năm - 3.700₫</p>
+
+        <ul class="list-unstyled">
+          <li>✔ Thiết kế đơn giản, tiện lợi, dễ dàng mang đi mọi nơi.</li>
+          <li>✔ Độ phân giải quang học lên đến 1000DPI, di chuyển mượt mà.</li>
+          <li>✔ Giảm tiếng ồn lên đến 90%, không gây ảnh hưởng đến không gian xung quanh.</li>
+        </ul>
+
+        <div class="d-flex align-items-center mb-3">
+          <label class="me-2">Số lượng:</label>
+          <div class="input-group w-auto">
+            <button class="btn btn-outline-secondary btn-sm">-</button>
+            <input type="text" class="form-control form-control-sm text-center" value="1" style="width: 50px;">
+            <button class="btn btn-outline-secondary btn-sm">+</button>
+          </div>
+        </div>
+
+        <h5 class="text-danger mb-3">Tạm tính: 231.830₫</h5>
+
+        <div class="d-grid gap-2">
+          <button class="btn btn-danger">Mua ngay</button>
+          <button class="btn btn-outline-primary">Thêm vào giỏ</button>
+          <button class="btn btn-outline-secondary">Mua trước trả sau</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sản phẩm liên quan -->
+  <div class="container my-5">
+    <h5 class="mb-4">Sản phẩm liên quan</h5>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-3">
+      @foreach (RelatedProduct rlProd in productDetail.RelatedProducts)
+      {
+        <div class="col">
+          <div class="card h-100">
+            <img src="@rlProd.Image" class="card-img-top" alt="sp1">
+            <div class="card-body p-2">
+              <h6 class="card-title text-truncate">@rlProd.Name</h6>
+              <p class="text-danger mb-1">@rlProd.Price</p>
+              <small class="text-muted">Đánh giá: ⭐ 5</small>
+              <NavLink href="@($"/product-detail/{rlProd.Id}")" class="btn btn-dark">Detail</NavLink>
+            </div>
+          </div>
+        </div>
+      }
+
+
+    </div>
+  </div>
+
+
+
+
+</div>
+
+@code {
+  [Parameter]
+  public int id { get; set; }
+
+  public string deg = "rotate(0deg)";
+  protected override async Task OnInitializedAsync()
+  {
+    prodService.OnChange += StateHasChanged;
+    
+
+
+  }
+  public override async Task SetParametersAsync(ParameterView param)
+  {
+    await base.SetParametersAsync(param);
+    await prodService.GetProductById(id);
+  }
+
+  public void changeImage(string newRotate)
+  {
+    deg = newRotate;
+  }
+  public void Dispose()
+  {
+    // Cleanup nếu cần
+    // StateService.OnChange -= StateHasChanged;
+  }
+}
+
+

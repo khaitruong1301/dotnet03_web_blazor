@@ -1,0 +1,54 @@
+@page "/search"
+@inject ProductStateService prodService
+@inject NavigationManager _navService
+
+<div class="container">
+    <EditForm Model="@productModelApi" OnValidSubmit="search" class="input-group">
+        <input class="form-control w-50" @bind-value="@k" />
+        <button type="submit" class="btn btn-search" @onclick="search" target="_self" rel="external">
+            <i class="fa fa-search"></i>
+            search
+        </button>
+    </EditForm>
+
+    <div class="mt-2">
+        <h3>Tìm thấy @prodService.lstProduct.Count kết quả</h3>
+        <div class="row">
+            @foreach(var item in prodService.lstProduct)
+            {
+            <div class="col-md-3 mt-2">
+                <div class="card">
+                    <img src="@item.Image" alt="..." />
+                    <div class="card-body">
+                        <h3 class="card-title">@item.Name</h3>
+                        <p class="card-text">@item.Price</p>
+                        <NavLink href="@($"/product-detail/{item.Id}")" class="btn btn-dark">Detail</NavLink>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+@code {
+    public string k { get; set; }
+    public ProductModelApi productModelApi = new ProductModelApi();
+    protected override async Task OnInitializedAsync()
+    {
+        prodService.OnChange += StateHasChanged;
+
+    }
+    public override async Task SetParametersAsync(ParameterView param)
+    {
+        await base.SetParametersAsync(param);
+        var url =  new Uri(_navService.Uri);
+        var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(url.Query);
+        string keyword = query.GetValueOrDefault("k");
+        await prodService.GetAllProductApiStore(keyword);
+    }
+    public void search(){
+        _navService.NavigateTo($"/search?k={k}",true);
+    }
+
+
+}

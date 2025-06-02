@@ -1,0 +1,44 @@
+@page "/product-list-page"
+@implements IDisposable
+@inject ProductStateService prodService
+
+<div class="container">
+    <h3>Cybersoft store</h3>
+    <div class="row">
+        @foreach (ProductViewModel prod in prodService.lstProduct)
+        {
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <img src="@prod.Image" alt="..." />
+                    <div class="card-body">
+                        <h3 class="card-title">@prod.Name</h3>
+                        <p>@prod.Price</p>
+                        <NavLink href="@($"/product-detail/{prod.Id}")" class="btn btn-dark">
+                            <i class="fa fa-view"></i>
+                            Detail
+                        </NavLink>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Nếu có dùng state service:
+         prodService.OnChange += StateHasChanged;
+         //Dùng service gọi api
+         prodService.GetAllProductApiStore();
+    }
+
+
+
+    public void Dispose()
+    {
+        // Cleanup nếu cần
+        prodService.OnChange -= StateHasChanged;
+    }
+}
