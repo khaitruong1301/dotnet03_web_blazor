@@ -1,0 +1,66 @@
+@page "/create-product"
+@inject ProductResfulService _prodService
+
+<EditForm Model="myModel" OnValidSubmit="HandleValidSubmit" class="w-75 mx-auto">
+    <h3>Create Product</h3>
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label for="id">ID</label>
+        <input id="id" class="form-control" @bind="myModel.id" />
+    </div>
+
+    <div class="mb-3">
+        <label for="name">Name</label>
+        <input id="name" class="form-control" @bind="myModel.name" />
+    </div>
+
+    <div class="mb-3">
+        <label for="price">Price</label>
+        <input id="price" class="form-control" @bind="myModel.price" type="number" />
+    </div>
+
+
+    <div class="mb-3">
+        <label for="img">Img</label>
+        <input id="img" class="form-control" @bind="myModel.img" />
+    </div>
+    <div class="mb-3">
+        <label for="img">Description</label>
+        <input id="img" class="form-control" @bind="myModel.description" />
+    </div>
+    <div class="mb-3">
+        <label for="type">Type</label>
+        <select class="form-control" @bind="myModel.type">
+            <option value="laptop">Laptop</option>
+            <option value="phone">Phone</option>
+            <option value="tablet">Tablet</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    @if (isSubmit == 1)
+    {
+        <div class="alert alert-success mt-2">
+            @_prodService.responseMessage
+        </div>
+    }
+    else if (isSubmit == 2)
+    {
+        <div class="alert alert-danger mt-2">
+            @_prodService.responseMessage
+        </div>
+    }
+</EditForm>
+@code {
+    private ProductResfulModel myModel = new ProductResfulModel();
+    public int isSubmit = 0;
+    private async Task HandleValidSubmit()
+    {
+        // Xử lý submit ở đây
+        //Gọi api http client
+        isSubmit = await _prodService.createProduct(myModel);
+    }
+
+
+}

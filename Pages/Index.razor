@@ -1,12 +1,36 @@
 @page "/"
 @layout HomeLayout
+@inject ProductResfulService _prodService;
+@inject HttpClient _http
 
-<div class="container-fluid">
-    hello cybersoft
+<div class="container">
+    <h3>Home</h3>
+    <div class="row">
+        @foreach (ProductResfulModel item in _prodService.lstProduct)
+        {
+            <div class="mt-2 col-3">
+                <div class="card">
+                    <img src="@item.img" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title">@item.name</p>
+                        <p class="card-text">@item.price</p>
+                        <button class="btn btn-dark">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
 </div>
 
 
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        // Gọi API ở đây nếu cần
+        await _prodService.getAllProduct();
+        // Nếu có dùng state service:
+        _prodService.OnChange += StateHasChanged;
+    }
 
-
-
-
+}

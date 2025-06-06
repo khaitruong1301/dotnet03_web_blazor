@@ -41,6 +41,7 @@
     public override async Task SetParametersAsync(ParameterView param)
     {
         await base.SetParametersAsync(param);
+    
         var url =  new Uri(_navService.Uri);
         var query = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(url.Query);
         string keyword = query.GetValueOrDefault("k");
@@ -49,6 +50,6 @@
     public void search(){
         _navService.NavigateTo($"/search?k={k}",true);
     }
-
-
 }
+
+

@@ -45,3 +45,4 @@
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.pdb
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.genruntimeconfig.cache
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/ref/dotnet03_web_blazor.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Data/product.json

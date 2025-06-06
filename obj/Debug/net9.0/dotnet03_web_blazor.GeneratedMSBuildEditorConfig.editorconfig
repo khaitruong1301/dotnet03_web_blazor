@@ -148,6 +148,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ResfulApi/CreateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzZnVsQXBpL0NyZWF0ZVByb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/ResfulApi/ProductManagement.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzZnVsQXBpL1Byb2R1Y3RNYW5hZ2VtZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/Pages/StateManagement/DemoBurgerState/DemoBurgerState.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3RhdGVNYW5hZ2VtZW50L0RlbW9CdXJnZXJTdGF0ZS9EZW1vQnVyZ2VyU3RhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
