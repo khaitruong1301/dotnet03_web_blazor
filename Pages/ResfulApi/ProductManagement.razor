@@ -15,6 +15,8 @@
                 <th>Description</th>
                 <th>Type</th>
                 <th>Deleted</th>
+                <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -29,6 +31,17 @@
                     <td>@item.description</td>
                     <td>@item.type</td>
                     <td>@item.deleted</td>
+                    <th>
+                        <NavLink href="@($"/product-edit/{item.id}")" class="btn btn-primary"> 
+                            <i class="fa fa-edit "></i>
+                        </NavLink>
+                       
+                    </th>
+                    <th>
+                         <button class="btn btn-danger" @onclick="()=>handleDelete(item.id)">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </th>
                 </tr>
             }
         </tbody>
@@ -47,5 +60,8 @@
         // Nếu có dùng state service:
         _prodService.OnChange += StateHasChanged;
     }
-    
+
+    public async Task handleDelete(string id){
+        await _prodService.deleteProductById(id);
+    }   
 }

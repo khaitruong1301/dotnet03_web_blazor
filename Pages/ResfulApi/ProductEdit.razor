@@ -1,0 +1,88 @@
+@page "/product-edit/{id}"
+@inject ProductResfulService _prodService
+@inject NavigationManager _nav
+@implements IDisposable 
+
+<EditForm Model="myModel" OnValidSubmit="HandleValidSubmit" class="w-75 mx-auto">
+    <h3>Create Product</h3>
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="mb-3">
+        <label for="id">ID</label>
+        <input id="id" class="form-control" @bind="myModel.id" readonly disabled />
+    </div>
+
+    <div class="mb-3">
+        <label for="name">Name</label>
+        <input id="name" class="form-control" @bind="myModel.name" />
+    </div>
+
+    <div class="mb-3">
+        <label for="price">Price</label>
+        <input id="price" class="form-control" @bind="myModel.price" type="number" />
+    </div>
+
+
+    <div class="mb-3">
+        <label for="img">Img</label>
+        <input id="img" class="form-control" @bind="myModel.img" />
+    </div>
+    <div class="mb-3">
+        <label for="img">Description</label>
+        <input id="img" class="form-control" @bind="myModel.description" />
+    </div>
+    <div class="mb-3">
+        <label for="type">Type</label>
+        <select class="form-control" @bind="myModel.type">
+            <option value="laptop">Laptop</option>
+            <option value="phone">Phone</option>
+            <option value="tablet">Tablet</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Update</button>
+    @if (isSubmit == 1)
+    {
+        <div class="alert alert-success mt-2">
+            @_prodService.responseMessage
+        </div>
+    }
+    else if (isSubmit == 2)
+    {
+        <div class="alert alert-danger mt-2">
+            @_prodService.responseMessage
+        </div>
+    }
+</EditForm>
+    @code {
+    [Parameter]
+    public string id { get; set; } = "";
+    private ProductResfulModel? myModel = new ProductResfulModel();
+    public int isSubmit = 0;
+    Timer timer;
+    private async Task HandleValidSubmit()
+    {
+        // Xử lý submit ở đây
+        //Gọi api http client
+        isSubmit = await _prodService.updateProduct(myModel, id);
+        timer = new Timer((state) =>
+        {
+            _nav.NavigateTo("/products");
+        }, null, 2000, 10000);
+
+    }
+
+    public void Dispose()
+    {
+        timer.Dispose();
+    }
+
+    public override async Task SetParametersAsync(ParameterView param)
+    {
+        await base.SetParametersAsync(param);
+        //Gọi api cập nhật dữ liệu cho myModel để load lên form
+        myModel = await _prodService.getProductById(id);
+        //Hàm cập nhật lại giao diện đối với các dữ liệu lấy từ hàm async await
+        await InvokeAsync(StateHasChanged);
+    }
+
+}

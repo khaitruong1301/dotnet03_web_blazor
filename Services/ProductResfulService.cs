@@ -22,9 +22,18 @@ public class ProductResfulService
         NotifyStateChanged();
     }
 
+    public async Task<ProductResfulModel?> getProductById(string id)
+    {
+        // Gọi API ở đây nếu cần
+        ProductResfulModel? res = await _http.GetFromJsonAsync<ProductResfulModel>($"https://svcy.myclass.vn/api/ProductApi/get/{id}");
+        //Gọi để giao diện cập nhật lại
+        NotifyStateChanged();
+        return res;
+    }
+
     public async Task<int> createProduct(ProductResfulModel prd)
     {
-        var response = await _http.PutAsJsonAsync("https://svcy.myclass.vn/api/ProductApi/create", prd);
+        var response = await _http.PostAsJsonAsync("https://svcy.myclass.vn/api/ProductApi/create", prd);
         if (response.StatusCode == System.Net.HttpStatusCode.OK)
         {
             //Thêm thành công 
@@ -40,6 +49,38 @@ public class ProductResfulService
             return 2;
         }
     }
+
+
+    public async Task<int> updateProduct(ProductResfulModel prdUpdate, string id)
+    {
+        var response = await _http.PutAsJsonAsync($"https://svcy.myclass.vn/api/ProductApi/update/{id}", prdUpdate);
+        if (response.StatusCode == System.Net.HttpStatusCode.OK)
+        {
+            //Thêm thành công 
+            await getAllProduct();
+            responseMessage = response.Content.ReadAsStringAsync().Result;
+            NotifyStateChanged();
+            return 1;
+        }
+        else
+        {
+            responseMessage = response.Content.ReadAsStringAsync().Result;
+            NotifyStateChanged();
+            return 2;
+        }
+    }
+    
+
+
+    public async Task deleteProductById(string id)
+    {
+        // Gọi API ở đây nếu cần
+        string? res = await _http.DeleteFromJsonAsync<string>($"https://svcy.myclass.vn/api/ProductApi/delete/{id}");
+
+        //Gọi để giao diện cập nhật lại
+        await getAllProduct();
+    }
+
 
 }
 /*

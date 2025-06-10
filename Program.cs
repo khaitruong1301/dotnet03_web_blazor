@@ -17,6 +17,7 @@ builder.Services.AddScoped<Burger>();
 builder.Services.AddScoped<BurgerStateService>();
 builder.Services.AddScoped<ProductStateService>();
 builder.Services.AddScoped<ProductResfulService>();
+builder.Services.AddScoped<RoomService>();
 
 //DI map controllers
 builder.Services.AddControllers();
@@ -32,6 +33,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
@@ -42,7 +45,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+//blazor hub server có sẵn khi tạo ứng dụng blazor
 app.MapBlazorHub();
+//hub ta tự tạo quản lý room
+app.MapHub<RoomHub>("/roomhub");
+
+
 app.MapFallbackToPage("/_Host");
 app.MapControllers();
 
