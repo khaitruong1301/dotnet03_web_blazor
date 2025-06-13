@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/dotnet03_web_blazor/assets/js/signalR_room.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\js\signalR_room.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cZnHAse3K1NiWG\u002BGgg0VeTNOYSVhpg5DVi1GJjc8BFI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"79"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cZnHAse3K1NiWG\u002BGgg0VeTNOYSVhpg5DVi1GJjc8BFI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 10:02:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/dotnet03_web_blazor/assets/js/signalR_room.txnp8juh4d.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\js\signalR_room.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"txnp8juh4d"},{"Name":"integrity","Value":"sha256-cZnHAse3K1NiWG\u002BGgg0VeTNOYSVhpg5DVi1GJjc8BFI="},{"Name":"label","Value":"_content/dotnet03_web_blazor/assets/js/signalR_room.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"79"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cZnHAse3K1NiWG\u002BGgg0VeTNOYSVhpg5DVi1GJjc8BFI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 10:02:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/dotnet03_web_blazor/css/bootstrap/bootstrap.min.bpk8xqwxhs.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap\bootstrap.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

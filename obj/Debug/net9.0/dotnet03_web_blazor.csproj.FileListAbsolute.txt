@@ -62,3 +62,6 @@
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/System.Net.ServerSentEvents.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/System.Threading.Channels.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/package-lock.json
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/package.json
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/040e5trkz5-txnp8juh4d.gz

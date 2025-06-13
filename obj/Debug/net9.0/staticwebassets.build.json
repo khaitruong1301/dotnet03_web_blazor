@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sOFG/KuCT0nXDUFzgHEYU5vBDDRsdKS7dPzRFAm1SEE=",
+  "Hash": "bnkT7JnOEQreSxzZs0vVpZCBI84pQCSLA9xp3DjpmXs=",
   "Source": "dotnet03_web_blazor",
   "BasePath": "_content/dotnet03_web_blazor",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/040e5trkz5-txnp8juh4d.gz",
+      "SourceId": "dotnet03_web_blazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/dotnet03_web_blazor",
+      "RelativePath": "assets/js/signalR_room#[.{fingerprint=txnp8juh4d}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/assets/js/signalR_room.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "46d7z8v3d0",
+      "Integrity": "bBEmE5/wp+U4k0SBjp8pHUk9tG+OtON3DwFsSMfO5es=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/assets/js/signalR_room.js"
+    },
     {
       "Identity": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/1i1znkg446-sjnzgf7e1h.gz",
       "SourceId": "dotnet03_web_blazor",
@@ -183,6 +204,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Identity": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/assets/js/signalR_room.js",
+      "SourceId": "dotnet03_web_blazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/",
+      "BasePath": "_content/dotnet03_web_blazor",
+      "RelativePath": "assets/js/signalR_room#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "txnp8juh4d",
+      "Integrity": "cZnHAse3K1NiWG+Ggg0VeTNOYSVhpg5DVi1GJjc8BFI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/js/signalR_room.js"
     },
     {
       "Identity": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/css/bootstrap/bootstrap.min.css",
@@ -564,6 +606,304 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "assets/js/signalR_room.js",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/040e5trkz5-txnp8juh4d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.013157894737"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bBEmE5/wp+U4k0SBjp8pHUk9tG+OtON3DwFsSMfO5es=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 10:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cZnHAse3K1NiWG+Ggg0VeTNOYSVhpg5DVi1GJjc8BFI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZnHAse3K1NiWG+Ggg0VeTNOYSVhpg5DVi1GJjc8BFI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/signalR_room.js",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/assets/js/signalR_room.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cZnHAse3K1NiWG+Ggg0VeTNOYSVhpg5DVi1GJjc8BFI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 10:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZnHAse3K1NiWG+Ggg0VeTNOYSVhpg5DVi1GJjc8BFI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/signalR_room.js.gz",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/040e5trkz5-txnp8juh4d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bBEmE5/wp+U4k0SBjp8pHUk9tG+OtON3DwFsSMfO5es=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 10:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bBEmE5/wp+U4k0SBjp8pHUk9tG+OtON3DwFsSMfO5es="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/signalR_room.txnp8juh4d.js",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/040e5trkz5-txnp8juh4d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.013157894737"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bBEmE5/wp+U4k0SBjp8pHUk9tG+OtON3DwFsSMfO5es=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 10:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cZnHAse3K1NiWG+Ggg0VeTNOYSVhpg5DVi1GJjc8BFI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "txnp8juh4d"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/signalR_room.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZnHAse3K1NiWG+Ggg0VeTNOYSVhpg5DVi1GJjc8BFI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/signalR_room.txnp8juh4d.js",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/assets/js/signalR_room.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "79"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cZnHAse3K1NiWG+Ggg0VeTNOYSVhpg5DVi1GJjc8BFI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 10:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "txnp8juh4d"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/signalR_room.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZnHAse3K1NiWG+Ggg0VeTNOYSVhpg5DVi1GJjc8BFI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/signalR_room.txnp8juh4d.js.gz",
+      "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/040e5trkz5-txnp8juh4d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bBEmE5/wp+U4k0SBjp8pHUk9tG+OtON3DwFsSMfO5es=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 10:02:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "txnp8juh4d"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/signalR_room.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bBEmE5/wp+U4k0SBjp8pHUk9tG+OtON3DwFsSMfO5es="
+        }
+      ]
+    },
     {
       "Route": "css/bootstrap/bootstrap.min.bpk8xqwxhs.css",
       "AssetFile": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/f3uy9kacyt-bpk8xqwxhs.gz",

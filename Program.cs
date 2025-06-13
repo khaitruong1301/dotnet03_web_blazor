@@ -48,7 +48,10 @@ app.UseRouting();
 //blazor hub server có sẵn khi tạo ứng dụng blazor
 app.MapBlazorHub();
 //hub ta tự tạo quản lý room
-app.MapHub<RoomHub>("/roomhub");
+app.MapHub<RoomHub>("/roomhub",options =>
+{
+    // options.LongPolling.PollTimeout = TimeSpan.FromMinutes(10);
+});
 
 
 app.MapFallbackToPage("/_Host");

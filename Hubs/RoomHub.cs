@@ -33,4 +33,12 @@ public class RoomHub : Hub
         //Sau khi thêm room xong thì sendall lại kết quả 
         await Clients.All.SendAsync("SendToAllRoom", _roomService.getAllRoom());
     }
+    // Gửi message đến 1 group cụ thể
+    public async Task SendToGroup(string groupName, string message)
+    {
+        await Clients.Group(groupName).SendAsync("ReceiveMessage", message);
+    }
+
 }
+
+
