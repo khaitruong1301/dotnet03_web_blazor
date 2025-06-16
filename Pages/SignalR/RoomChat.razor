@@ -1,6 +1,8 @@
 @page "/demo-chat-room"
 @inject NavigationManager _nav
 @implements IDisposable
+@inject IJSRuntime JS
+
 <style>
     .chat-sidebar {
         height: 100vh;
@@ -44,15 +46,16 @@
                 <!-- Room list -->
                 <div class="list-group">
                     <!-- Repeat this block for each room -->
-                    @foreach(RoomModel room in lstRoom){
+                    @foreach (RoomModel room in lstRoom)
+                    {
                         <button class="btn btn-light chat-room-item mb-1">
-                        @room.roomName <span class="badge bg-primary rounded-pill">
-                            @room.id
-                        </span>
-                    </button>
+                            @room.roomName <span class="badge bg-primary rounded-pill">
+                                @room.id
+                            </span>
+                        </button>
                     }
-                    
-                    
+
+
                 </div>
             </div>
         </div>
@@ -83,8 +86,8 @@
 @code {
 
     List<RoomModel> lstRoom = new List<RoomModel>() {
-        new RoomModel(1)    
-    };
+new RoomModel(1)
+};
     HubConnection hub;
 
     public void Dispose()
@@ -99,7 +102,8 @@
         await hub.StartAsync();
 
         //Cấu hình lắng nghe server hub từ hubroom
-        hub.On<List<RoomModel>>("SendToAllRoom", async (lstRoomFromHub)=>{
+        hub.On<List<RoomModel>>("SendToAllRoom", async (lstRoomFromHub) =>
+        {
             lstRoom = lstRoomFromHub;
 
             @* Console.WriteLine($@"{JsonSerializer.Serialize(lstRoomFromHub)}"); *@
@@ -107,13 +111,29 @@
             //Yêu cầu blazor load lại component sau khi thay đổi dữ liệu
             await InvokeAsync(StateHasChanged);
         });
-
-
-
     }
 
-    public async Task AddRoom() {
-        //Gọi hàm trên serverhub 
+
+      protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+    
+            await JS.InvokeVoidAsync("renderHTML");
+            int res = await JS.InvokeAsync<int>("tinhTong",1,2);
+            await JS.InvokeVoidAsync("main");
+            Console.WriteLine(@$"res {res}"); 
+        }
+        else
+        {
+            // Logic for subsequent renders
+            Console.WriteLine("Component re-rendered.");
+        }
+    }
+
+    public async Task AddRoom()
+    {
+        //Gọi hàm trên serverhub
         await hub.InvokeAsync("AddRoomHub");
     }
 

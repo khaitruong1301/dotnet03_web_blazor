@@ -19,12 +19,27 @@ builder.Services.AddScoped<ProductStateService>();
 builder.Services.AddScoped<ProductResfulService>();
 builder.Services.AddScoped<RoomService>();
 
+
+builder.Services.AddCors(option=>{
+    option.AddPolicy("allow_origin", policy => {
+        // policy.AllowAnyOrigin(); //Cho phép tất cả các client đều có thể gửi dữ liệu đến server
+        policy.AllowAnyOrigin()
+            .AllowAnyHeader() //Cho phép rq tất cả header
+            .AllowAnyMethod(); //Cho phép rq tất cả method (POST,PUT,GET,DELETE,OPTION)
+            // .AllowCredentials(); ////Cho phép cookie...
+    });
+});
+
+
 //DI map controllers
 builder.Services.AddControllers();
 //Swagger
 builder.Services.AddSwaggerGen();
+//signalr
+builder.Services.AddSignalR();
 
 var app = builder.Build();
+app.UseCors("allow_origin");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -49,7 +64,6 @@ app.UseRouting();
 app.MapBlazorHub();
 //hub ta tự tạo quản lý room
 app.MapHub<RoomHub>("/roomhub");
-
 
 app.MapFallbackToPage("/_Host");
 app.MapControllers();
