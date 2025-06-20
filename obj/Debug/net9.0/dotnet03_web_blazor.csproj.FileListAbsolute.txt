@@ -8,6 +8,8 @@
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/dotnet03_web_blazor.runtimeconfig.json
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/dotnet03_web_blazor.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/dotnet03_web_blazor.pdb
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Blazored.LocalStorage.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.AspNetCore.Connections.Abstractions.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.AspNetCore.Http.Connections.Client.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.AspNetCore.Http.Connections.Common.dll
@@ -22,10 +24,17 @@
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Microsoft.OpenApi.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/System.Net.ServerSentEvents.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/bin/Debug/net9.0/System.Threading.Channels.dll
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.csproj.AssemblyReference.cache
@@ -39,6 +48,8 @@
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.RazorAssemblyInfo.cs
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.sourcelink.json
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/scopedcss/bundle/dotnet03_web_blazor.styles.css
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/040e5trkz5-66kk8n6nwq.gz
+/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/p0dq49fdhr-tzh1ehr67f.gz
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/f3uy9kacyt-bpk8xqwxhs.gz
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/zxl6syb4uv-8inm30yfxf.gz
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/1silr6exdp-cmapd0fi15.gz
@@ -62,4 +73,3 @@
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.pdb
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/dotnet03_web_blazor.genruntimeconfig.cache
 /Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/ref/dotnet03_web_blazor.dll
-/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/obj/Debug/net9.0/compressed/040e5trkz5-x1p8j8qpdb.gz

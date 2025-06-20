@@ -1,7 +1,16 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
+﻿<CascadingAuthenticationState>
+
+<Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="typeof(HomeLayout)" />
+        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="typeof(HomeLayout)" >
+            <NotAuthorized>
+                        <h1>Bạn không có quyền truy cập vào trang này - <a href="/login-page-auth" class="btn btn-success">Đăng nhập</a>
+                        </h1>
+            </NotAuthorized>
+
+        </AuthorizeRouteView>
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+
     </Found>
     <NotFound>
         <PageTitle>Not found</PageTitle>
@@ -10,3 +19,4 @@
         </LayoutView>
     </NotFound>
 </Router>
+</CascadingAuthenticationState>

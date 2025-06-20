@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/dotnet03_web_blazor.props" />
+</Project>

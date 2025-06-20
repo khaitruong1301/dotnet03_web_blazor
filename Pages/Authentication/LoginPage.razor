@@ -1,0 +1,70 @@
+@page "/login-page-auth"
+@using System.Security.Claims
+@inject HttpClient Http
+@inject IJSRuntime JS
+@inject JwtAuthService _jwtAuthService
+
+@inject AuthenticationStateProvider _auth
+
+
+@inject Blazored.LocalStorage.ILocalStorageService _localStorage
+
+<div class="container">
+    <EditForm Model="model" OnValidSubmit="HandleValidSubmit" class="w-50 mx-auto">
+        <h3>Login</h3>
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="mb-3">
+            <label for="id">username</label>
+            <input id="userName" class="form-control" @bind="@model.userName" />
+        </div>
+        <div class="mb-3">
+            <label for="name">password</label>
+            <input id="password" type="password" class="form-control" @bind="@model.password" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </EditForm>
+</div>
+
+
+<h1>
+
+</h1>
+
+
+@code {
+    private UserLogin model = new UserLogin();
+    private ClaimsPrincipal _user;
+    protected override async Task OnInitializedAsync()
+    {
+        // Gọi API hoặc khởi tạo ở đây
+        // StateService.OnChange += StateHasChanged;
+        var autState = await _auth.GetAuthenticationStateAsync();
+        if (_user != null)
+        {
+            _user = autState.User;
+            @* string? name = _user.Identity.Name; *@
+            var claimRole = _user.Claims?.FirstOrDefault(claim => claim.Type == ClaimTypes.Role);
+            var claimName = _user.Claims?.FirstOrDefault(claim => claim.Type == ClaimTypes.Name);
+            var claimLopHoc = _user.Claims?.FirstOrDefault(claim => claim.Type == "LopHoc");
+            Console.WriteLine(@$"{claimName.Value} - {claimRole.Value} {claimLopHoc?.Value}");
+            @* Console.WriteLine(JsonSerializer.Serialize(_user)); *@
+        }
+    }
+
+    public async Task HandleValidSubmit()
+    {
+        string token = null;
+        if (model.userName == "admin" && model.password == "admin")
+        {
+            token = _jwtAuthService.GenerateToken("khaiAdmin", "Admin");
+        }
+        else if (model.userName == "user" && model.password == "user")
+        {
+            token = _jwtAuthService.GenerateToken("user", "User");
+        }
+        @* Console.WriteLine($@"{token}"); *@
+        @* await JS.InvokeVoidAsync("luuToken",token); *@
+        await _localStorage.SetItemAsync("accessToken", token);
+    }
+}

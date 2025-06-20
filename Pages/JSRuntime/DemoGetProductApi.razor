@@ -1,0 +1,45 @@
+@page "/demo-getproduct-webapi"
+@inject IJSRuntime JS
+<div id="content">
+    <table class="table w-50 mx-auto">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>img</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyContent">
+
+        </tbody>
+    </table>
+    <hr />
+    <ul id="room">
+
+    </ul>
+</div>
+@code {
+    @* List<ProductResfulModel> lstProduct = new List<ProductResfulModel>(); *@
+
+    @* protected override async Task OnInitializedAsync()
+    {
+        //Gọi hàm bên js (gọi thằng api từ client)
+     
+    } *@
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Chạy sau lần render đầu tiên (có thể await)
+           await  JS.InvokeVoidAsync("getAllProduct");
+           await  JS.InvokeVoidAsync("main");
+        }
+    }
+}
+
+
+
+
+

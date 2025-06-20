@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/assets/js/signalR_room.js"
     },
     {
+      "Id": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/assets/js_fetch_api/fetchApi.js",
+      "PackagePath": "staticwebassets/assets/js_fetch_api/fetchApi.js"
+    },
+    {
       "Id": "/Volumes/Cybersoft/dotnet03/blazor_web_v9/dotnet03_web_blazor/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },

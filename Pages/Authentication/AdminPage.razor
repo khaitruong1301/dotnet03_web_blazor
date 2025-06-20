@@ -1,0 +1,20 @@
+@page "/quan-tri"
+@* @attribute [Authorize(Roles = "Admin")] *@
+@using Microsoft.AspNetCore.Components.Authorization
+
+
+<AuthorizeView Roles="User,Admin">
+    <h3>Đây là giao diện user và admin có thể thấy</h3>
+</AuthorizeView>
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <div class="container">
+        <h3>Quản trị viên</h3>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <h1>Bạn không có quyền truy cập vào trang này - <a href="/login-page-author" class="btn btn-success">Đăng nhập</a>
+        </h1>
+    </NotAuthorized>
+</AuthorizeView>
+<h1>ai cũng thấy được</h1>
